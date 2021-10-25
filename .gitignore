@@ -1,7 +1,13 @@
 advancements
+data
 datapacks
 DIM1
 DIM-1
+entities
 playerdata
 poi
+serverconfig
 stats
+level.dat_old
+session.lock
+WorldDownloader.txt
