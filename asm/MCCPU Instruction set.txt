@@ -1,0 +1,42 @@
+commutative: 000 r ffff
+        funct:
+        0000: zero (set to 0)
+        0010: and
+        0011: nand
+        0100: xor
+        0101: xnor
+        0110: or
+        0111: nor
+        1000: add
+addi: 001 r r iii (add immediate)
+move: 010 r ----  (copy)
+not:  011 r r --- (invert bits)
+jump: 100 f iiii
+        funct:
+        0: jeq (jump if equal)
+        1: jneq (jump if not equal)
+sb:   101 r iiii  (store byte)
+lb:   110 r iiii  (load byte)
+dr:   111 r ----  (display register)
+
+NOTES:
+
+This instruction set is designed for a CPU with only two working registers.
+With only two working registers, communative operations don't need to specify their origins, clearing up quite a bit of space in the instruction.
+Additionally, specifying a register only takes 1 bit, which is very useful with only 8 bits of real estate for instructions.
+
+"addi $r0, $r0, 0" can be used as a no-op.
+
+opcode 100 is left unused for the possibility of adding a jump instruction in the future.
+
+dr (display register) might be moved to the 010 opcode, as it's kind of "moving" or copying a register to the display.
+This would work especially well since both dr and move have the same format, so some of the dont-care bits could instead make up a funct field.
+
+If the above change was made to dr, then 111 could be used for something else, probably non-communative arithmetic such as subtraction.
+So it might look like:
+non-communative: 111 r r r ff
+        funct:
+        00: sub
+        01: ??
+        10: ??
+        11: ??
