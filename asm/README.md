@@ -1,6 +1,6 @@
 ## Overview
-- This instruction set is designed for a CPU with only two working registers.
-- Opcodes are three bits, and other bits can 1. indicate a register, 2. indicate an immediate value, or 3. indicate a more specific function.
+- This instruction set is designed for a CPU with exactly two 8-bit working registers.
+- Opcodes are three bits, and other bits can either indicate a register, indicate an immediate value, or indicate a more specific function.
 
 ## Spec
 ```
