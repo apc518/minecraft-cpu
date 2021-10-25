@@ -4,6 +4,8 @@
 
 This is my first ever minecraft CPU, created in collaboration with Peer Carnes.
 
+I created a [custom assembly language](https://github.com/apc518/minecraft-cpu/tree/master/asm), including an assembler written in python, and an example program that calculates fibbonaci numbers.
+
 ## Specs
 - 8 bit instructions and registers
 - 2 registers
