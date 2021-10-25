@@ -10,3 +10,6 @@ This is my first ever minecraft CPU, created in collaboration with Peer Carnes.
 - 16 bytes of RAM
 - 16 bytes of read-only instruction memory
 - 0.1hz clock
+
+## Potential Future Work
+- Add base-ten display
