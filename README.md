@@ -15,3 +15,4 @@ We created a [custom assembly language](https://github.com/apc518/minecraft-cpu/
 
 ## Potential Future Work
 - Add base-ten display
+- Include assembly -> region data assembler
