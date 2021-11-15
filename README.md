@@ -13,6 +13,9 @@ We created a [custom assembly language](https://github.com/apc518/minecraft-cpu/
 - 16 bytes of read-only instruction memory
 - 0.1hz clock
 
+## Special Thanks
+Exxabite for their [ram design](https://www.youtube.com/watch?v=VOBAbOTuuos) which is used with some modifications in this cpu.
+
 ## Potential Future Work
 - Add base-ten display
 - Include assembly -> region data assembler
